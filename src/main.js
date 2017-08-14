@@ -6,6 +6,8 @@ import router from './router/router'
 import vueResource from 'vue-resource'
 import './assets/css/common.css'
 import '../node_modules/weui/dist/style/weui.min.css'
+import '../node_modules/jquery-weui/dist/css/jquery-weui.min.css'
+import '../node_modules/jquery-weui/dist/js/jquery-weui.min'
 
 Vue.use(vueResource);
 Vue.http.options.emulateJSON = true;
