@@ -1,8 +1,8 @@
 /**
  * Created by houenxing on 17/8/14.
  */
-import list from '@/components/list'
-import detail from '@/components/detail'
+import list from '../../components/list'
+import detail from '../../components/detail'
 
 export default [
   {
@@ -19,4 +19,8 @@ export default [
     name: 'detail',
     component: detail,
   },
+  {
+    path: '*',
+    redirect: {path: '/list'},
+  }
 ]

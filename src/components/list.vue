@@ -1,73 +1,77 @@
 <template>
-  <div class="list">
-      <!--<div class="page__hd">-->
-        <!--<h1 class="page__title">Flex</h1>-->
-        <!--<p class="page__desc">Flex布局</p>-->
-      <!--</div>-->
+  <div class="list flex flex-direction-column">
 
-      <!--<div class="weui-flex">-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-      <!--</div>-->
-      <!--<div class="weui-flex">-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-      <!--</div>-->
-      <!--<div class="weui-flex">-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-      <!--</div>-->
-      <!--<div class="weui-flex">-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-        <!--<div class="weui-flex__item"><div class="placeholder">weui</div></div>-->
-      <!--</div>-->
+    <div class="list-header flex overflow-y-hidden">
+      <div class="weui-flex__item flex flex-direction-column flex-justify-content-center">
+        <router-link to="/detail" class="flex flex-justify-content-center">关注</router-link>
+      </div>
+      <div class="weui-flex__item flex flex-direction-column flex-justify-content-center">
+        <router-link to="/detail" class="flex flex-justify-content-center">热门</router-link>
+      </div>
+      <div class="weui-flex__item flex flex-direction-column flex-justify-content-center">
+        <router-link to="/detail" class="flex flex-justify-content-center">最新</router-link>
+      </div>
+    </div>
 
-      <!--<div class='demos-content-padded'>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_primary">主按钮</a>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_disabled weui-btn_primary">禁用按钮</a>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_warn">警告按钮</a>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_disabled weui-btn_warn">禁用按钮</a>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_default">默认按钮</a>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_disabled weui-btn_default">禁用按钮</a>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_plain-default">扁平默认按钮</a>-->
-        <!--<a href="javascript:;" class="weui-btn weui-btn_plain-primary">扁平主按钮</a>-->
+    <div class="flex-grow-1 overflow-y-auto box flex flex-direction-column">
 
-        <!--<div class="button_sp_area">-->
-          <!--<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary">按钮</a>-->
-          <!--<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default">按钮</a>-->
-        <!--</div>-->
-
-        <!--<p>-->
-          <!--<a href="javascript:;" class="weui-btn weui-btn_primary weui-btn_loading">正在加载...</a>-->
-          <!--<a href="javascript:;" class="weui-btn weui-btn_warn weui-btn_loading">正在加载...</a>-->
-          <!--<a href="javascript:;" class="weui-btn weui-btn_default weui-btn_loading">正在加载...</a>-->
-        <!--</p>-->
-      <!--</div>-->
-
-      <div class='demos-content-padded'>
-        <div class="weui-slider" id='slider1'>
-          <div class="weui-slider__inner">
-            <div style="width: 0;" class="weui-slider__track"></div>
-            <div style="left: 0;" class="weui-slider__handler"></div>
+      <div class="container">
+        <div class="container-box flex flex-direction-column">
+          <div class="weui-panel__bd">~真.赛车~</div>
+          <div class="flex-grow-1 box flex">
+            <img src="../../static/images/swiper-1.jpg" alt="">
           </div>
-        </div>
-        <br>
-        <div class="weui-slider-box" id='slider2'>
-          <div class="weui-slider">
-            <div id="sliderInner" class="weui-slider__inner">
-              <div id="sliderTrack" style="width: 75%;" class="weui-slider__track"></div>
-              <div id="sliderHandler" style="left: 75%;" class="weui-slider__handler"></div>
-            </div>
-          </div>
-          <div id="sliderValue" class="weui-slider-box__value">75</div>
+          <div class="weui-cell__ft">尚有空闲位置：11/12</div>
         </div>
       </div>
 
-      <!--<div class="page__ft">-->
-        <!--<a href="javascript:home()"><img src="../../static/images/icon_footer_link.png" /></a>-->
-      <!--</div>-->
+
+
+      <div class="container">
+        <div class="container-box flex flex-direction-column">
+          <div class="weui-panel__bd">~坦克大战~</div>
+          <div class="flex-grow-1 box flex">
+            <img src="../../static/images/swiper-2.jpg" alt="">
+          </div>
+          <div class="weui-cell__ft">尚有空闲位置：10/12</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container-box flex flex-direction-column">
+          <div class="weui-panel__bd">~抓娃娃~</div>
+          <div class="flex-grow-1 box flex">
+            <img src="../../static/images/swiper-4.jpg" alt="">
+          </div>
+          <div class="weui-cell__ft">尚有空闲位置：7/12</div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="list-footer overflow-y-hidden">
+      <div class="weui-grids">
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <img src="../../static/images/icon_nav_button.png" alt="">
+          </div>
+          <p class="weui-grid__label">
+            Button
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <img src="../../static/images/icon_nav_cell.png" alt="">
+          </div>
+          <p class="weui-grid__label">
+            List
+          </p>
+        </a>
+      </div>
+    </div>
+
+
   </div>
 </template>
 
@@ -79,16 +83,14 @@
   name: 'list',
   data () {
     return {
+        d_slider1: 0,
     }
   },
   methods: {
   },
   created: function () {
     this.$nextTick(function() {
-        $('#slider1').slider();
-        $('#slider2').slider(function (per) {
-          console.log(per);
-        });
+//      $.toptip('操作成功', 'success');
       }, 100);
   }
 }
@@ -96,5 +98,38 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .list {
+    width: 100%;
+    height: 100%;
+  }
+
+  .list-header {
+    position: relative;
+    width: 100%;
+    height: 12%;
+    padding: 0 20%;
+    border-bottom: 1px solid rgb(148,177,219);
+  }
+
+  .container {
+    width: 100%;
+    height: 40%;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+
+  .container-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .list-footer {
+    width: 100%;
+    height: 20%;
+  }
 
 </style>
