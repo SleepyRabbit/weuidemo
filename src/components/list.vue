@@ -1,12 +1,12 @@
 <template>
-  <div class="list flex flex-direction-column">
+  <div class="list box flex flex-direction-column">
 
     <div class="list-header flex overflow-y-hidden">
       <div class="weui-flex__item flex flex-direction-column flex-justify-content-center">
         <router-link to="/detail" class="flex flex-justify-content-center">关注</router-link>
       </div>
       <div class="weui-flex__item flex flex-direction-column flex-justify-content-center">
-        <router-link to="/detail" class="flex flex-justify-content-center">热门</router-link>
+        <router-link to="/list1" class="flex flex-justify-content-center">热门</router-link>
       </div>
       <div class="weui-flex__item flex flex-direction-column flex-justify-content-center">
         <router-link to="/detail" class="flex flex-justify-content-center">最新</router-link>
@@ -19,7 +19,7 @@
         <div class="container-box flex flex-direction-column">
           <div class="weui-panel__bd">~真.赛车~</div>
           <div class="flex-grow-1 box flex">
-            <img src="../../static/images/swiper-1.jpg" alt="">
+            <a href="#/detail" class="flex"><img src="../../static/images/swiper-1.jpg" alt=""></a>
           </div>
           <div class="weui-cell__ft">尚有空闲位置：11/12</div>
         </div>
@@ -31,7 +31,7 @@
         <div class="container-box flex flex-direction-column">
           <div class="weui-panel__bd">~坦克大战~</div>
           <div class="flex-grow-1 box flex">
-            <img src="../../static/images/swiper-2.jpg" alt="">
+            <a href="#/list1" class="flex"><img src="../../static/images/swiper-2.jpg" alt=""></a>
           </div>
           <div class="weui-cell__ft">尚有空闲位置：10/12</div>
         </div>
@@ -41,7 +41,7 @@
         <div class="container-box flex flex-direction-column">
           <div class="weui-panel__bd">~抓娃娃~</div>
           <div class="flex-grow-1 box flex">
-            <img src="../../static/images/swiper-4.jpg" alt="">
+            <a href="" class="flex"><img src="../../static/images/swiper-4.jpg" alt=""></a>
           </div>
           <div class="weui-cell__ft">尚有空闲位置：7/12</div>
         </div>
@@ -99,14 +99,11 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .list {
-    width: 100%;
-    height: 100%;
   }
 
   .list-header {
-    position: relative;
     width: 100%;
-    height: 12%;
+    height: 10%;
     padding: 0 20%;
     border-bottom: 1px solid rgb(148,177,219);
   }
@@ -116,6 +113,7 @@
     height: 40%;
     padding: 5px 10px;
     margin-bottom: 5px;
+    border-bottom: 1px solid rgb(213,213,213);
   }
 
   .container-box {
@@ -123,7 +121,11 @@
     height: 100%;
   }
 
-  img {
+  .container a {
+    width: 100%;
+  }
+
+  .container img {
     width: 100%;
   }
 

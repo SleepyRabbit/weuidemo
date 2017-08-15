@@ -3,6 +3,7 @@
  */
 import list from '../../components/list'
 import detail from '../../components/detail'
+import about from '../../components/about'
 
 export default [
   {
@@ -18,6 +19,11 @@ export default [
     path: '/detail',
     name: 'detail',
     component: detail,
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: about,
   },
   {
     path: '*',
