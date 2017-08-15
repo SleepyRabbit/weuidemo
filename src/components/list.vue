@@ -13,7 +13,9 @@
       </div>
     </div>
 
-    <div class="flex-grow-1 overflow-y-auto box flex flex-direction-column">
+    <p>{{ userAgent }}</p>
+
+    <div class="flex-shrink-2 flex-grow-1 overflow-y-auto box flex flex-direction-column">
 
       <div class="container">
         <div class="container-box flex flex-direction-column">
@@ -84,6 +86,7 @@
   data () {
     return {
         d_slider1: 0,
+        userAgent: '',
     }
   },
   methods: {
@@ -91,7 +94,8 @@
   created: function () {
     this.$nextTick(function() {
 //      $.toptip('操作成功', 'success');
-      }, 100);
+      this.userAgent = navigator.userAgent.toLowerCase();
+    }, 100);
   }
 }
 </script>
@@ -112,7 +116,6 @@
     width: 100%;
     height: 40%;
     padding: 5px 10px;
-    margin-bottom: 5px;
     border-bottom: 1px solid rgb(213,213,213);
   }
 

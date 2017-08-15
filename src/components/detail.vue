@@ -8,26 +8,26 @@
     <div class="flex-grow-1 detail-container box flex flex-justify-content-center">
       <div class="container flex flex-direction-column">
 
-          <div class="container-header flex">
+          <div class="container-header">
             <img src="../../static/images/swiper-1.jpg" alt="">
           </div>
 
-          <div class="container-content flex-grow-1 overflow-y-auto">
-            <div class="box">
+          <div class="container-content flex-shrink-2 flex-grow-1 overflow-y-auto">
               <p>Description:</p>
               <p>没时间解释了，快排队开车吧~~~~</p>
               <p>Description:</p>
               <p>没时间解释了，快排队开车吧~~~~</p>
               <p>Description:</p>
+              <p>Description:</p>
               <p>没时间解释了，快排队开车吧~~~~</p>
-            </div>
+              <p>Description:</p>
+              <p>没时间解释了，快排队开车吧~~~~</p>
+              <p>Description:</p>
           </div>
 
           <div class="container-footer flex flex-direction-column flex-justify-content-center">
-            <!--<p>尚有空闲位置：11/12</p>-->
             <div class="weui-cell__ft">尚有空闲位置：11/12</div>
           </div>
-        <!--</div>-->
       </div>
 
     </div>
@@ -77,28 +77,31 @@
   }
 
   .container {
+    position: relative;
     margin-top: 5px;
     height: 100%;
     width: 96%;
-    background-color: beige;
+    /*background-color: beige;*/
     border-left: 1px solid rgb(213,213,213);
     border-right: 1px solid rgb(213,213,213);
     border-bottom: 1px solid rgb(213,213,213);
   }
 
   .container-header {
+    position: relative;
     width: 100%;
     height: 50%;
-    background-color: darkgrey;
+    /*background-color: darkgrey;*/
   }
 
   img {
     width: 100%;
-    /*height: 10%;*/
+    height: 100%;
   }
 
   .container-content {
     width: 100%;
+    /*background-color: aqua;*/
     padding: 5px;
   }
 
