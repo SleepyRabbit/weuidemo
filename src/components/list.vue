@@ -19,7 +19,7 @@
 
       <div class="container">
         <div class="container-box flex flex-direction-column">
-          <div class="weui-panel__bd">~真.赛车~</div>
+          <div class="weui-panel__bd">~真s~</div>
           <div class="flex-grow-1 box flex">
             <a href="#/detail" class="flex"><img src="../../static/images/swiper-1.jpg" alt=""></a>
           </div>
@@ -31,7 +31,7 @@
 
       <div class="container">
         <div class="container-box flex flex-direction-column">
-          <div class="weui-panel__bd">~坦克大战~</div>
+          <div class="weui-panel__bd">~大2~</div>
           <div class="flex-grow-1 box flex">
             <a href="#/list1" class="flex"><img src="../../static/images/swiper-2.jpg" alt=""></a>
           </div>
@@ -41,7 +41,7 @@
 
       <div class="container">
         <div class="container-box flex flex-direction-column">
-          <div class="weui-panel__bd">~抓娃娃~</div>
+          <div class="weui-panel__bd">~抓~</div>
           <div class="flex-grow-1 box flex">
             <a href="" class="flex"><img src="../../static/images/swiper-4.jpg" alt=""></a>
           </div>

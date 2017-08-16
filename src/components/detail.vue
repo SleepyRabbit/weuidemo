@@ -2,7 +2,7 @@
   <div class="detail box flex flex-direction-column">
 
     <div class="detail-header flex flex-direction-column flex-justify-content-center">
-      <div class="weui-panel__bd">~真.赛车~</div>
+      <div class="weui-panel__bd">~真~</div>
     </div>
 
     <div class="flex-grow-1 detail-container box flex flex-justify-content-center">
